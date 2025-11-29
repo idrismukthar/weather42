@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>weather42</title>
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Font-awesome -->
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Pixel Font -->
+  <link href="https://fonts.cdnfonts.com/css/press-start-2p" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Logo -->
+    <img src="assets/42_logo.png" class="logo" alt="weather42 logo" />
+
+    <!-- App Title -->
+    <h1 class="app-title">weather42</h1>
+
+    <!-- Search Box -->
+    <div class="search-box">
+      <input id="cityInput" type="text" placeholder="Enter city..." />
+      <button id="searchBtn">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </button>
+    </div>
+
+    <!-- Weather Card -->
+    <div id="weatherCard" class="weather-card hidden">
+      <h2 id="cityName"></h2>
+      <img id="weatherIcon" class="weather-icon" />
+      <p id="temperature"></p>
+      <p id="description"></p>
+    </div>
+
+    <!-- Footer -->
+    <p class="footer">Made with ❤️ + 🌦 for two 😉</p>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
